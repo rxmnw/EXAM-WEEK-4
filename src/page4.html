@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+</head>
+<body>
+   <header
+      class="flex items-center justify-between max-w-300 m-auto p-[20px] lg:p-[10px]"
+    >
+      <img src="./Faridunimg/logoF.svg" class="w-[50%] lg:w-auto" alt="" />
+      <nav class="lg:flex hidden flex-col items-start">
+        <p class="text-[#00578A] text-[16px] font-semibold">
+          8 (495) 926-06-03
+        </p>
+        <img src="Faridunimg/socialF.png" alt="" />
+      </nav>
+      <nav class="lg:flex hidden flex-col items-start">
+        <p class="text-[#4F4F4F] text-[14px]">info@gormedcentre.ru</p>
+        <p class="text-[#4F4F4F] underline">Заказать звонок</p>
+      </nav>
+      <nav class="lg:flex hidden flex-col items-start">
+        <p class="text-[#4F4F4F]">г. Мытищи,</p>
+        <p class="text-[#4F4F4F]">ул.Рождественская, д.7</p>
+      </nav>
+      <nav class="lg:flex hidden flex-col items-start">
+        <p class="text-[#4F4F4F]">Ежедневно</p>
+        <p class="text-[#4F4F4F]">с 9.00 до 21.00</p>
+      </nav>
+      <nav class="lg:flex hidden gap-[15px]">
+        <img src="Faridunimg/searchF.png" alt="" />
+        <button
+          class="text-[#00578A] font-bold bg-[#E3EFF5] p-[10px_35px] rounded-[5px]"
+        >
+          Личный кабинет
+        </button>
+      </nav>
+      <nav class="flex gap-[15px] lg:hidden items-center">
+        <i class="fa-solid text-[20px] !font-black fa-phone-flip"></i>
+        <p class="text-[#7F8D94] text-[20px]">Меню</p>
+        <i class="fa-solid text-[20px] !font-black fa-bars"></i>
+      </nav>
+    </header>
+    <header
+      class="hidden lg:flex items-center justify-between max-w-300 m-auto rounded-[5px] p-[15px_25px] shadow-2xl mt-[25px]"
+    >
+      <nav class="flex items-center gap-[25px]">
+        <p class="flex text-[16px] items-center gap-1.5 font-bold">
+          Page1
+          <i class="fa-solid fa-caret-down text-[#4F4F4F] text-[12px]"></i>
+        </p>
+        <p class="font-bold text-[16px]">Page 2</p>
+        <p class="font-bold text-[16px]">Page 3</p>
+        <p class="font-bold text-[16px]">Page 4</p>
+        <p class="font-bold text-[16px]">Page 5</p>
+        <p class="flex text-[16px] items-center gap-1.5 font-bold">
+          О центре
+          <i class="fa-solid fa-caret-down text-[#4F4F4F] text-[12px]"></i>
+        </p>
+        <p class="font-bold text-[16px]">Детство</p>
+        <p class="font-bold text-[16px]">Контакты</p>
+      </nav>
+      <nav class="flex items-center gap-[15px]">
+        <p class="flex items-center gap-1.5">
+          <i class="fa-solid fa-glasses text-[#4F4F4F]"></i>Версия для
+          слабовидящих
+        </p>
+        <button
+          class="text-white font-bold bg-[#00578A] p-[10px_35px] rounded-[5px]"
+        >
+          Запись на приём
+        </button>
+      </nav>
+    </header>
+    <main>
+        <div class="bg-[#F0F6F9]">
+        <section class="max-w-300 m-auto flex flex-col gap-[20px] lg:flex-row lg:justify-between pt-[20px] mt-[30px] relative">
+            <aside class="flex flex-col gap-[50px] items-center lg:items-start">
+                <div class="flex gap-[10px]">
+                    <p class="underline text-[#353535]">Главная</p>
+                    <p>/</p>
+                    <p class="underline text-[#353535]">Направления</p>
+                    <p>/</p>
+                    <p class="text-[#808284]">Косметология</p>
+                </div>
+                <div class="flex flex-col lg:gap-[40px] gap-[20px] items-center lg:items-start">
+                    <div class="flex flex-col lg:gap-[20px] gap-[10px] items-center lg:items-start">
+                    <p class="text-[22px] text-[#00578A] font-bold">Косметология</p>
+                    <h1 class="lg:text-[30px] text-[35px] font-bold text-center lg:text-start">Контурная пластика</h1>
+                    <h1 class="text-[40px] font-bold">от 1 500 ₽</h1>
+                    </div>
+                    <button class="bg-[#00C6BF] text-white font-semibold p-[10px_40px] rounded-[5px]">Записаться</button>
+                </div>
+            </aside>
+            <img src="./Faridunimg/MaskgroupF.png" alt="">
+        </section>
+        </div>
+        <section class="bg-[#F0F6F9] max-w-300 m-auto flex flex-wrap lg:flex-nowrap justify-between mt-[20px] lg:p-[50px] rounded-[5px] p-[50px_15px] gap-[50px] mb-[20px]">
+            <article class="flex flex-col gap-[10px] items-start">
+                <img src="./Faridunimg/crossF.png" alt="">
+                <p class="text-[#017CC1] text-[24px] font-semibold">>10</p>
+                <p>лет заботы о вашем <br> здоровье</p>
+            </article>
+
+            <article class="flex flex-col gap-[10px] items-start">
+                <img src="./Faridunimg/crossF.png" alt="">
+                <p class="text-[#017CC1] text-[24px] font-semibold">>150</p>
+                <p>квалифицированных <br> специалистов</p>
+            </article>
+
+            <article class="flex flex-col gap-[10px] items-start">
+                <img src="./Faridunimg/crossF.png" alt="">
+                <p class="text-[#017CC1] text-[24px] font-semibold ">3 000</p>
+                <p class="w-[150px]">медицинских услуг по всем направлениям</p>
+            </article>
+
+            <article class="flex flex-col gap-[10px] items-start">
+                <img src="./Faridunimg/crossF.png" alt="">
+                <p class="text-[#017CC1] text-[24px] font-semibold">День в день</p>
+                <p class="w-[150px]">прием врача любой <br> специальности в день обращения</p>
+            </article>
+        </section>
+        <section class=" max-w-300 m-auto flex flex-col gap-[40px] bg-[#F0F6F9] p-[50px_15px] lg:p-[50px]">
+            <div class="flex flex-col gap-[10px]">
+                <h1 class="text-[32px] font-semibold">Все, что вы должны знать о косметологии: секреты красоты и здоровья</h1>
+                <p class="text-[18px]">Косметология – это наука и искусство, которое изучает и улучшает красоту и здоровье кожи, волос и ногтей. Современная косметология предлагает широкий спектр процедур и продуктов, которые помогают нам выглядеть и чувствовать себя лучше. В этой статье мы погрузимся в мир косметологии и рассмотрим основные аспекты этой науки.</p>
+            </div>
+             <div class="flex flex-col gap-[10px]">
+                <h1 class="text-[20px] text-[#00578A] font-semibold">1.Роль косметолога в поддержании красоты и здоровья</h1>
+                <p class="text-[18px]">Косметолог – это специалист, который помогает нам достичь желаемого внешнего вида и поддерживать здоровье нашей кожи и волос. Он или она проводит диагностику, консультирует по уходу за кожей и рекомендует процедуры и продукты, которые помогут решить определенные проблемы.</p>
+                <hr class=" hidden lg:flex border-[1px] border-[#C6C6C6]">
+            </div>
+
+             <div class="flex flex-col gap-[10px] hidden lg:flex">
+                <p class="text-[18px]">Пример текста с цитатой пример текста с цитатой пример текста с цитатой пример текста с цитатой пример текста с цитатой. Пример текста с цитатой пример текста с цитатой пример текста с цитатой пример текста с цитатой пример текста с цитатой. Пример текста с цитатой пример текста с цитатой пример текста с цитатой пример текста с цитатой пример текста с цитатой. </p>
+                <hr class="border-[1px] border-[#C6C6C6]">
+            </div>
+            <div class="flex justify-between items-center w-100% bg-[#E3EFF5] p-[30px] rounded-[10px]">
+                <h1 class="font-semibold text-[20px]">Пример реализации аккордеона для сео текста</h1>
+                <h1 class="text-[35px]">+</h1>
+            </div>
+            <div class="flex flex-col gap-[30px] bg-[#E3EFF5] p-[30px] rounded-[10px]">
+            <div class="flex justify-between items-center w-100% ">
+                <h1 class="font-semibold text-[20px]">Пример реализации аккордеона для сео текста</h1>
+                <h1 class="text-[35px]">-</h1>
+            </div>
+            <p>Выбор правильных косметических продуктов является ключевым аспектом косметологии. Необходимо учитывать тип кожи, его особенности и проблемы, которые требуют решения. Косметолог может помочь вам определиться с выбором наиболее подходящих продуктов, которые удовлетворят вашим потребностям.</p>
+            </div>
+             <div class="flex justify-between items-center w-100% bg-[#E3EFF5] p-[30px] rounded-[10px]">
+                <h1 class="font-semibold text-[20px]">Пример реализации аккордеона для сео текста</h1>
+                <h1 class="text-[35px]">+</h1>
+            </div>
+        </section>
+        <section class=" max-w-300 m-auto flex flex-col gap-[50px] p-[50px_15px] lg:-[50px_0]">
+            <div class="flex justify-between w-100% items-center">
+                <h1 class="text-[48px] font-semibold">Врачи</h1>
+                <div class="flex items-center gap-[10px]">
+                    <p class="p-[10px] rounded-full bg-[#EAF6FF]"><i class="fa-solid fa-angle-left" style="color:#017CC1;"></i></p>
+                    <p class="p-[8px] rounded-full bg-[#017CC1]"><i class="fa-solid fa-angle-right" style="color:white"></i></p>
+                </div>
+            </div>
+            <div class="flex justify-between gap-[30px] overflow-auto lg:overflow-visible">
+                <article class="flex flex-col gap-[10px] min-w-[260px]">
+                    <img src="./Faridunimg/photoF.png" alt="">
+                    <h1 class="font-semibold text-[22px] text-[#017CC1]">Крятов Андрей</h1>
+                    <p class="text-[18px]">Главный врач, уролог, андролог</p>
+                    <button class="py-[10px] text-white bg-[#00578A] rounded-[5px]">Записаться</button>
+                </article>
+
+                <article class="flex flex-col gap-[10px] min-w-[260px]">
+                    <img src="./Faridunimg/photo2F.png" alt="">
+                    <h1 class="font-semibold text-[22px] text-[#017CC1]">Савина Наталья</h1>
+                    <p class="text-[18px]">Врач-невролог</p>
+                    <button class="py-[10px] text-white bg-[#00578A] rounded-[5px]">Записаться</button>
+                </article>
+
+                <article class="flex flex-col gap-[10px] min-w-[260px]">
+                    <img src="./Faridunimg/photo3F.png" alt="">
+                    <h1 class="font-semibold text-[22px] text-[#017CC1]">Зотова Гюзяль</h1>
+                    <p class="text-[18px]">Врач-терапевт</p>
+                    <button class="py-[10px] text-white bg-[#00578A] rounded-[5px]">Записаться</button>
+                </article>
+
+                <article class="flex flex-col gap-[10px] min-w-[260px]">
+                    <img src="./Faridunimg/photo4F.png" alt="">
+                    <h1 class="font-semibold text-[22px] text-[#017CC1]">Николаeва Оксана</h1>
+                    <p class="text-[18px]">Врач-терапевт</p>
+                    <button class="py-[10px] text-white bg-[#00578A] rounded-[5px]">Записаться</button>
+                </article>
+            </div>
+        </section>
+        <section class=" max-w-300 m-auto flex flex-col gap-[50px] p-[50px_15px] lg:-[50px_0]">
+              <div class="flex justify-between w-100% items-center">
+                <h1 class="text-[48px] font-semibold">Отзывы пациентов</h1>
+                <div class="flex items-center gap-[10px]">
+                    <p class="p-[10px] rounded-full bg-[#EAF6FF]"><i class="fa-solid fa-angle-left" style="color:#017CC1;"></i></p>
+                    <p class="p-[8px] rounded-full bg-[#017CC1]"><i class="fa-solid fa-angle-right" style="color:white"></i></p>
+                </div>
+            </div>
+             <div class="flex gap-[20px] mt-[50px] ml-[15px] lg:ml-0">
+                 <div class="w-[641px] h-[382px] ">
+                    <div class="flex flex-col gap-[5px]">
+                        <p class="font-bold">Балушина Татьяна</p>
+                        <p class="text-[15px]">18 апреля 2022</p>
+                    </div>
+                    <div class="flex flex-col gap-[20px] pt-[20px]">
+                        <img class="w-[116px] h-[18px]" src="./Faridunimg/StarsF.png" alt="">
+                        <p class="w-[350px] lg:w-[501px] text-[17.55px] font-Nunito">Попала к Татьяне Ивановне
+                            спонтанно.
+                            Очень довольна приёмом и проведением ультразвуковой
+                            диагностики. Спасибо Наталье Ивановне за внимательное отношение к пациентам! При
+                            возникнвении
+                            проблем теперь только к ней!</p>
+                        <button
+                            class="w-[208px] h-[54px] text-[#017CC1] border-[1px] border-solid border-[#017CC1] rounded-[10px]">Подробнее</button>
+                        <p>Врач: <span class="text-[#017CC1] font-bold ">Савина Наталья Владимировна</span></p>
+                    </div>
+                </div>
+                  <div class="hidden lg:block  w-[641px] h-[382px] ">
+                    <div class="flex flex-col gap-[5px]">
+                        <p class="font-bold">Трофимов Иван</p>
+                        <p class="text-[15px]">24 ноября 2021</p>
+                    </div>
+                    <div class="flex flex-col gap-[20px] pt-[20px]">
+                        <img class="w-[116px] h-[18px]" src="./Faridunimg/StarsF.png" alt="">
+                        <p class="w-[501px] text-[17.55px] font-Nunito">Огромное спасибо врачу за тщательное
+                            обследование.
+                            Выявили нехватку витамина Д, проблем с щитовидной, к счастью, не оказалось. Доктор приятная
+                            в
+                            общении и настоящий профессионал!</p>
+                        <button
+                            class="w-[208px] h-[54px] text-[#017CC1] border-[1px] border-solid border-[#017CC1] rounded-[10px]">Подробнее</button>
+                        <p>Врач: <span class="text-[#017CC1] font-bold ">Крятов Андрей Михайлович</span></p>
+                    </div>
+                </div>
+                </div>
+        </section>
+
+         <section
+            class="rounded-[14px] max-w-300 m-auto bg-gradient-to-r  pt-[30px] pb-[50px] lg:pt-[50px] from-[#00BAC6] to-[#0074B8]  mt-[20px]">
+            <div class="lg:flex  items-center lg:pl-0 pl-[20px] justify-around mb-[50px]">
+                <h1 class="text-[white] lg:text-[48px] font-semibold text-[32px] w-[200px] lg:w-[536px]">Записаться на
+                    приём</h1>
+                <p class="text-[white] text-[20px] w-[330px]">Оставьте заявку и мы свяжемся с вами в ближайшее время</p>
+            </div>
+            <div class="flex gap-[20px] flex-wrap items-center justify-center">
+                <div class=" rounded-[5px] bg-[white] flex justify-center items-center gap-[115px] w-[360px] h-[70px]">
+                    <p class="font-bold text-[16px] text-[#141414]">Выберете направление</p>
+                    <img src="./src/img/ertyui.png" alt="">
+                </div>
+                <div
+                    class="lg:hidden  rounded-[5px] bg-[white] flex justify-center items-center gap-[158px] w-[360px] h-[70px]">
+                    <p class="font-bold text-[16px] text-[#141414]">Выберете врача</p>
+                    <img src="./src/img/ertyui.png" alt="">
+                </div>
+                <input type="text" placeholder="Ваше имя"
+                    class=" rounded-[5px] bg-[white] pl-[20px] w-[360px] h-[70px]">
+                <input type="text" placeholder="Ваш телефон"
+                    class="lg:hidden rounded-[5px] bg-[white] pl-[20px] w-[360px] h-[70px]">
+                <button
+                    class="hidden lg:block rounded-[5px] text-[18px] bg-[#00C6BF] w-[360px] h-[70px] text-[white]">Оставить
+                    заявку</button>
+                <div
+                    class="hidden  rounded-[5px] bg-[white] lg:flex justify-center items-center gap-[158px] w-[360px] h-[70px]">
+                    <p class="font-bold text-[16px] text-[#141414]">Выберете врача</p>
+                    <img src="./src/img/ertyui.png" alt="">
+                </div>
+                <input type="text" placeholder="Ваш телефон"
+                    class="hidden lg:block rounded-[5px] bg-[white] pl-[20px] w-[360px] h-[70px]">
+                <button
+                    class="lg:hidden rounded-[5px] text-[18px] bg-[#00C6BF] w-[360px] h-[70px] text-[white]">Оставить
+                    заявку</button>
+                <p class="text-[#141414] w-[355px] text-[white] text-[14px]">Отправляя заявку, вы соглашаетесь на нашу
+                    политику конфиденциальности</p>
+            </div>
+        </section>
+
+         <section class=" max-w-300 m-auto flex flex-col gap-[50px] p-[50px_15px] lg:-[50px_0]">
+             <div class="flex justify-between w-100% items-center">
+                <h1 class=" lg:text-[48px] text-[30px] font-semibold">Популярные услуги в Косметологии</h1>
+                <div class="flex items-center gap-[10px]">
+                    <p class="p-[10px] rounded-full bg-[#EAF6FF]"><i class="fa-solid fa-angle-left" style="color:#017CC1;"></i></p>
+                    <p class="p-[8px] rounded-full bg-[#017CC1]"><i class="fa-solid fa-angle-right" style="color:white"></i></p>
+                </div>
+            </div>
+            <div class="flex justify-between lg:overflow-visible overflow-auto items-stretch w-[100%] gap-[25px]">
+          <nav class="flex flex-col lg:min-w-[260px] min-w-[305px]">
+            <img src="./Faridunimg/image1F.png" alt="" />
+            <article
+              class="flex flex-col p-[20px] rounded-[0px_0px_5px_5px] bg-[#F0F6F9] gap-[25px]"
+            >
+              <p class="text-[20px] font-semibold lg:w-[245px]">
+                Магнитно-резонансная томография (МРТ)
+              </p>
+              <button class="bg-[#00578A] text-white p-[10px_0] rounded-[5px]">
+                Записаться
+              </button>
+            </article>
+          </nav>
+          <nav class="flex flex-col lg:min-w-[260px] min-w-[305px]">
+            <img src="./Faridunimg/image2F.png" alt="" />
+            <article
+              class="flex flex-col p-[20px] rounded-[0px_0px_5px_5px] bg-[#F0F6F9] gap-[25px]"
+            >
+              <p class="text-[20px] pb-[30px] font-semibold lg:w-[245px]">
+               Гастроскопия
+              </p>
+              <button class="bg-[#00578A] text-white p-[10px_0] rounded-[5px]">
+                Записаться
+              </button>
+            </article>
+          </nav>
+          <nav class="flex flex-col lg:min-w-[260px] min-w-[305px]">
+            <img src="./Faridunimg/image3F.png" alt="" />
+            <article
+              class="flex flex-col p-[20px] rounded-[0px_0px_5px_5px] bg-[#F0F6F9] gap-[25px]"
+            >
+              <p class="text-[20px] pb-[30px] font-semibold lg:w-[245px]">
+                Прием гинеколога
+              </p>
+              <button class="bg-[#00578A] text-white p-[10px_0] rounded-[5px]">
+                Записаться
+              </button>
+            </article>
+          </nav>
+          <nav class="flex flex-col lg:min-w-[260px] min-w-[305px]">
+            <img src="./Faridunimg/image4F.png" alt="" />
+            <article
+              class="flex flex-col p-[20px] rounded-[0px_0px_5px_5px] bg-[#F0F6F9] gap-[25px]"
+            >
+              <p class="text-[20px] font-semibold lg:w-[245px]">
+                Магнитно-резонансная томография (МРТ)
+              </p>
+              <button class="bg-[#00578A] text-white p-[10px_0] rounded-[5px]">
+                Записаться
+              </button>
+            </article>
+          </nav>
+        </div>
+         </section>
+
+         <section class=" max-w-300 m-auto flex flex-col gap-[50px] p-[20px_15px] lg:-[50px_0]">
+            <div class="flex justify-between w-100% items-center">
+                <h1 class=" lg:text-[48px] text-[30px] font-semibold">Лицензии и сертификаты</h1>
+                <div class="flex items-center gap-[10px]">
+                    <p class="p-[10px] rounded-full bg-[#EAF6FF]"><i class="fa-solid fa-angle-left" style="color:#017CC1;"></i></p>
+                    <p class="p-[8px] rounded-full bg-[#017CC1]"><i class="fa-solid fa-angle-right" style="color:white"></i></p>
+                </div>
+            </div>
+          <div class="flex justify-evenly mt-[50px] gap-[20px]">
+            <div class="w-[290px] h-[456px] ">
+                <div class="w-[305px] h-[414px] rounded-[5px] ] border-[2px] border-solid border-[#BEE1F6] p-[20px]">
+                    <img src="./Faridunimg/image5F.png" alt="">
+                </div>
+                <p class="text-[#4F4F4F] pl-[10px]">Лицензия Л041-01162-5000369739 (выписка из реестра)</p>
+            </div>
+            <div class="hidden lg:block w-[305px] h-[456px] ">
+                <div class=" w-[290px] h-[414px] rounded-[5px] ] border-[2px] border-solid border-[#BEE1F6] p-[20px]">
+                    <img src="./Faridunimg/image6F.png" alt="">
+                </div>
+                <p class="text-[#00a6ff] pl-[10px]">Лицензия Л017-01162-50/00561579 (выписка из реестра)</p>
+            </div>
+            <div class="hidden lg:block w-[305px] h-[456px] ">
+                <div class="w-[290px] h-[414px] rounded-[5px] ] border-[2px] border-solid border-[#BEE1F6] p-[20px]">
+                    <img src="./Faridunimg/image7F.png" alt="">
+                </div>
+                <p class=" text-[#4F4F4F] pl-[10px]">Лицензия Л017-01162-50/00561579 (выписка из реестра)</p>
+            </div>
+            <div class="hidden lg:block w-[305px] h-[456px] ">
+                <div class="w-[290px] h-[414px] rounded-[5px] ] border-[2px] border-solid border-[#BEE1F6] p-[20px]">
+                    <img src="./Faridunimg/image6F.png" alt="">
+                </div>
+                <p class="text-[#4F4F4F] pl-[10px]">Лицензия Л041-01162-50/00338967 (выписка из реестра)</p>
+            </div>
+        </div>
+         </section>
+         <section class=" max-w-300 m-auto flex flex-col gap-[50px] p-[50px_15px] lg:p-[50px_0]">
+            <h1 class=" lg:text-[48px] text-[30px] font-semibold">Как нас найти</h1>
+            <img class="lg:flex hidden" src="./Faridunimg/image8F.png" alt="">
+            <img class="lg:hidden" src="./Faridunimg/mapF.png" alt="">
+         </section>
+
+           <section
+            class="rounded-[14px] max-w-300 m-auto bg-gradient-to-r  pt-[30px] pb-[50px] lg:pt-[50px] from-[#00BAC6] to-[#0074B8]  mt-[20px]">
+            <div class="lg:flex  items-center lg:pl-0 pl-[20px] justify-around mb-[50px]">
+                <h1 class="text-[white] lg:text-[48px] font-semibold text-[32px] w-[200px] lg:w-[536px]">Записаться на
+                    приём</h1>
+                <p class="text-[white] text-[20px] w-[330px]">Оставьте заявку и мы свяжемся с вами в ближайшее время</p>
+            </div>
+            <div class="flex gap-[20px] flex-wrap items-center justify-center">
+                <div class=" rounded-[5px] bg-[white] flex justify-center items-center gap-[115px] w-[360px] h-[70px]">
+                    <p class="font-bold text-[16px] text-[#141414]">Выберете направление</p>
+                    <img src="./src/img/ertyui.png" alt="">
+                </div>
+                <div
+                    class="lg:hidden  rounded-[5px] bg-[white] flex justify-center items-center gap-[158px] w-[360px] h-[70px]">
+                    <p class="font-bold text-[16px] text-[#141414]">Выберете врача</p>
+                    <img src="./src/img/ertyui.png" alt="">
+                </div>
+                <input type="text" placeholder="Ваше имя"
+                    class=" rounded-[5px] bg-[white] pl-[20px] w-[360px] h-[70px]">
+                <input type="text" placeholder="Ваш телефон"
+                    class="lg:hidden rounded-[5px] bg-[white] pl-[20px] w-[360px] h-[70px]">
+                <button
+                    class="hidden lg:block rounded-[5px] text-[18px] bg-[#00C6BF] w-[360px] h-[70px] text-[white]">Оставить
+                    заявку</button>
+                <div
+                    class="hidden  rounded-[5px] bg-[white] lg:flex justify-center items-center gap-[158px] w-[360px] h-[70px]">
+                    <p class="font-bold text-[16px] text-[#141414]">Выберете врача</p>
+                    <img src="./src/img/ertyui.png" alt="">
+                </div>
+                <input type="text" placeholder="Ваш телефон"
+                    class="hidden lg:block rounded-[5px] bg-[white] pl-[20px] w-[360px] h-[70px]">
+                <button
+                    class="lg:hidden rounded-[5px] text-[18px] bg-[#00C6BF] w-[360px] h-[70px] text-[white]">Оставить
+                    заявку</button>
+                <p class="text-[#141414] w-[355px] text-[white] text-[14px]">Отправляя заявку, вы соглашаетесь на нашу
+                    политику конфиденциальности</p>
+            </div>
+        </section>
+
+ <footer class="bg-[#F4F9FB] pt-[50px] pb-[40px] px-[20px] font-sans mt-[50px]">
+    <div class="max-w-[1200px] m-auto">
+        <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-[40px] gap-[30px]">
+            <img src="./Faridunimg/logo2F.svg" class="w-[180px] h-[60px] object-contain">
+            
+            <nav class="flex flex-wrap gap-x-[50px] gap-y-[15px] text-[#4A5568] text-[15px] font-medium">
+                <p class="hover:text-[#0088CC]">Направления</p>
+                <p class="hover:text-[#0088CC]">Услуги</p>
+                <p class="hover:text-[#0088CC]">Врачи</p>
+                <p class="hover:text-[#0088CC]">Отзывы</p>
+                <p class="hover:text-[#0088CC]">Акции</p>
+                <div class="flex items-center gap-[6px] cursor-pointer hover:text-[#0088CC]">
+                    О центре <span class="text-[10px]">▼</span>
+                </div>
+                <p class="hover:text-[#0088CC]">Детство</p>
+                <p class="hover:text-[#0088CC]">Контакты</p>
+            </nav>
+        </div>
+        <div class="flex flex-col lg:flex-row justify-between items-start gap-[30px]">
+            
+            <div class="w-full lg:w-[260px] flex flex-col gap-[35px]">
+                <p class="text-[#8E99AF] text-[13px] leading-[20px]">
+                    © 2011-2023 Городской Медицинский Центр. Все права защищены.
+                </p>
+                <a href="#" class="text-[#8E99AF] text-[13px] underline">Политика конфиденциальности</a>
+            </div>
+            <div class="flex flex-col gap-[20px]">
+                <div class="flex flex-col text-[#006096] text-[26px] font-bold leading-[34px]">
+                    <a href="tel:84959260603">8 (495) 926-06-03</a>
+                    <a href="tel:84955880880">8 (495) 588-08-80</a>
+                </div>
+                <div class="flex items-center gap-[10px] cursor-pointer group">
+                    <div class="bg-[#25D366] w-[24px] h-[24px] rounded-full flex items-center justify-center text-white text-[14px]">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <span class="text-[#8E99AF] text-[14px] group-hover:text-[#25D366]">Написать в Whatsapp</span>
+                </div>
+            </div>
+            <div class="flex flex-col gap-[8px]">
+                <p class="text-[#4A5568] text-[14px]">г. Мытищи, ул. Рождественская, д. 7</p>
+                <p class="text-[#8E99AF] text-[14px] mb-[15px]">Ежедневно с 9.00 до 21.00</p>
+                <div class="flex items-center gap-[10px] cursor-pointer group">
+                    <div class="bg-[#0077FF] w-[24px] h-[24px] rounded-[4px] flex items-center justify-center text-white text-[12px]">
+                        vk
+                    </div>
+                    <span class="text-[#8E99AF] text-[14px] group-hover:text-[#0077FF]">Vkontakte</span>
+                </div>
+            </div>
+            <div class="flex flex-col lg:items-end gap-[12px] w-full lg:w-auto">
+                <button class="bg-[#DEEAF6] text-[#1E212C] text-[14px] font-bold px-[30px] py-[15px] rounded-[4px] hover:bg-[#CFE0F0] transition-all w-full lg:w-auto">
+                    Заказать обратный звонок
+                </button>
+                <p class="text-[#1E212C] text-[14px] mt-[15px]">info@garmedcentre.ru</p>
+                <div class="flex items-center gap-[10px] text-[#8E99AF] text-[14px] cursor-pointer hover:text-[#1E212C]">
+                    <span class="text-[18px]"> <p class="flex items-center gap-1.5">
+          <i class="fa-solid fa-glasses text-[#4F4F4F]"></i>
+        </p></span>
+                    <span>Версия для слабовидящих</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+<footer class="bg-[#ffffff] pb-[60px] px-[20px] mt-[30px]">
+    <div class="max-w-[1200px] m-auto flex flex-col gap-[15px]">
+        
+        <p class="text-[#8E99AF] text-[13px] leading-[20px] max-w-[1100px]">
+            Информация о ценах носит уведомительный характер и не является публичной офертой. Действующий прейскурант, заверенный печатью и подписью руководителя, находится на информационных стендах Центра. Деятельность ООО «ГМЦ» осуществляется на основании действующей лицензии, выданной Департаментом здравоохранения города Москвы.
+        </p>
+
+        <p class="text-[#8E99AF] text-[13px] font-medium uppercase tracking-[0.5px]">
+            Имеются противопоказания. Необходимо проконсультироваться со специалистом
+        </p>
+
+    </div>
+</footer>
+    </main>
+</body>
+</html>
